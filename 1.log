@@ -1,0 +1,20 @@
+
+Dispath AsyncTask: id=0
+
+New AsyncTask[id=0]
+
+AsyncTask[0] Finish: GET / HTTP/1.0
+
+
+
+Host: 127.0.0.1:9501
+Connection: close
+Cache-Control: max-age=0
+Upgrade-Insecure-Requests: 1
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/80.0.3987.132 Safari/537.36 chrome-extension
+Accept: text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.9
+Accept-Encoding: gzip, deflate
+Accept-Language: zh-CN,zh;q=0.9,en;q=0.8,en-US;q=0.7
+Cookie: ltd_end=-1; pro_end=-1; order=id%20desc; memSize=1833; serverType=nginx; sites_path=/www/wwwroot; backup_path=/www/backup; webssh_serial=0; rank=a; uploadSize=1073741824; aceEditor=%7B%22fontSize%22%3A%2213px%22%2C%22theme%22%3A%22monokai%22%7D; SetName=; force=0; mtime_reverse=True; size_reverse=True; files_sort=name; name_reverse=False; cutFileName=null; form_proxy=%5Bobject%20Object%5D; p-1=1; layers=4; copyFileName=null; BT_PANEL_6=262440e5-7d53-42bd-87c0-50464a15cca0.kXnNfXlXZHBeHDJOyEXqOA_COfg; request_token=wXi65mp0gvB5S362ujlKl9PHWxu1pCc3EKfmHJbBVUKKY66R; load_search=undefined; BatchPaste=2; BatchSelected=null; PHPSESSID=2b5ea56hrgsjpu7tovgc45p41d; Path=/www/wwwroot/111.229.128.239; ChangePath=4; vcodesum=9; p5=1; softType=0; load_type=0; p0=5; load_page=5
+
+ -> OK

@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e71f74fe-ae52-41a6-b9ca-ce92e33f8446" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
+    <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
+    <execution>
+      <executable path="composer" />
+    </execution>
+  </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
+    <include_path>
+      <path value="$PROJECT_DIR$/../ide-helper-master" />
+      <path value="$PROJECT_DIR$/vendor/composer" />
+      <path value="$PROJECT_DIR$/vendor/phpoption/phpoption" />
+      <path value="$PROJECT_DIR$/vendor/nikic/fast-route" />
+      <path value="$PROJECT_DIR$/vendor/symfony/polyfill-ctype" />
+      <path value="$PROJECT_DIR$/vendor/vlucas/phpdotenv" />
+    </include_path>
+  </component>
+  <component name="ProjectId" id="1YQmtL54QCxnKsJqxUDYFgMC3fc" />
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="WebServerToolWindowFactoryState" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
+    <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+    <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\coding\swoole_demo\app" />
+      <recent name="C:\coding\swoole_demo\common" />
+      <recent name="C:\coding\swoole_demo\databases\Driver" />
+      <recent name="C:\coding\swoole_demo\databases\connect" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\coding\swoole_demo\doc" />
+      <recent name="C:\coding\swoole_demo\public" />
+      <recent name="C:\coding\swoole_demo\app\util" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e71f74fe-ae52-41a6-b9ca-ce92e33f8446" name="Default Changelist" comment="" />
+      <created>1582883405912</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1582883405912</updated>
+      <workItem from="1582883407037" duration="794000" />
+      <workItem from="1583068901631" duration="26660000" />
+      <workItem from="1583201892469" duration="5772000" />
+      <workItem from="1583291415099" duration="4738000" />
+      <workItem from="1583311832835" duration="1195000" />
+      <workItem from="1583374712061" duration="5133000" />
+      <workItem from="1583388427469" duration="1372000" />
+      <workItem from="1583460701374" duration="18810000" />
+      <workItem from="1583664047021" duration="600000" />
+      <workItem from="1583676536368" duration="2225000" />
+      <workItem from="1583738659126" duration="2802000" />
+      <workItem from="1583806998499" duration="2548000" />
+      <workItem from="1583892970957" duration="8928000" />
+      <workItem from="1583997039811" duration="8598000" />
+      <workItem from="1584065522962" duration="4869000" />
+      <workItem from="1584152804045" duration="8960000" />
+      <workItem from="1584273939936" duration="2873000" />
+      <workItem from="1584411631300" duration="12467000" />
+      <workItem from="1584497673800" duration="18730000" />
+      <workItem from="1584583731223" duration="13421000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+</project>
