@@ -3,7 +3,7 @@
 namespace  app\util\request;
 
 use Swoole\Http\Request  as swooleHttpRequest;
-class Request{
+class Request implements RequestInterface {
 
     //https://wiki.swoole.com/#/http_server?id=httprequest
     private swooleHttpRequest $requester;

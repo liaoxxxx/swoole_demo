@@ -1,7 +1,39 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="e71f74fe-ae52-41a6-b9ca-ce92e33f8446" name="Default Changelist" comment="" />
+    <list default="true" id="e71f74fe-ae52-41a6-b9ca-ce92e33f8446" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/util/databases/Model.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/util/router/RouteManager.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/app/util/router/RuleItem.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/config/cache.ini" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/todolist.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/version_log.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/template/goods/add.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/1.log" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/HttpServer.php" beforeDir="false" afterPath="$PROJECT_DIR$/HttpServer.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/App.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/App.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/AutoConfig.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/AutoConfig.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Boot.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Boot.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/http/controller/AdminController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/http/controller/AdminController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/http/controller/GoodsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/http/controller/GoodsController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/http/controller/IndexController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/http/controller/IndexController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/util/databases/DbConnector.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/databases/DbConnector.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/util/request/Request.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/request/Request.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/util/response/JsonResponse.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/response/JsonResponse.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/util/view/View.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/util/view/View.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/databases.ini" beforeDir="false" afterPath="$PROJECT_DIR$/config/databases.ini" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/databases/mysql.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test.php" beforeDir="false" afterPath="$PROJECT_DIR$/test.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/vendor/composer/installed.json" beforeDir="false" afterPath="$PROJECT_DIR$/vendor/composer/installed.json" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -25,7 +57,12 @@
     <option name="HIDDEN_KINDS">
       <set />
     </option>
-    <expand />
+    <expand>
+      <path>
+        <item name="Database" type="3277223f:DatabaseStructure$DbRootGroup" />
+        <item name="@111.229.128.239" type="feb32156:DbDataSourceImpl" />
+      </path>
+    </expand>
     <select />
   </component>
   <component name="FileTemplateManagerImpl">
@@ -34,6 +71,9 @@
         <option value="HTML File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP">
     <include_path>
@@ -46,15 +86,21 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1YQmtL54QCxnKsJqxUDYFgMC3fc" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
+    <property name="DatabaseDriversLRU" value="mysql" />
     <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.mappings" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.highlight.symlinks" value="true" />
     <property name="WebServerToolWindowPanel.toolwindow.show.date" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.permissions" value="false" />
     <property name="WebServerToolWindowPanel.toolwindow.show.size" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/doc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/config" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.webide.settings.project.settings.php" />
@@ -67,6 +113,7 @@
       <recent name="C:\coding\swoole_demo\databases\connect" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\coding\swoole_demo\config" />
       <recent name="C:\coding\swoole_demo\doc" />
       <recent name="C:\coding\swoole_demo\public" />
       <recent name="C:\coding\swoole_demo\app\util" />
@@ -82,6 +129,26 @@
           <option name="name" value="StatusDashboardGroupingRule" />
         </RuleState>
       </list>
+    </option>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="allServicesViewState">
+      <serviceView>
+        <treeState>
+          <expand>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@16170f20" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+            </path>
+            <path>
+              <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@16170f20" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@66986eb2" type="9fbbdea:ServiceModel$ServiceNode" />
+            </path>
+          </expand>
+          <select />
+        </treeState>
+      </serviceView>
     </option>
   </component>
   <component name="SvnConfiguration">
@@ -113,11 +180,28 @@
       <workItem from="1584273939936" duration="2873000" />
       <workItem from="1584411631300" duration="12467000" />
       <workItem from="1584497673800" duration="18730000" />
-      <workItem from="1584583731223" duration="13421000" />
+      <workItem from="1584583731223" duration="14738000" />
+      <workItem from="1584670295276" duration="12566000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <option name="ADD_EXTERNAL_FILES_SILENTLY" value="true" />
   </component>
 </project>

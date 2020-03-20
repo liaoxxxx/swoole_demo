@@ -32,13 +32,13 @@ class JsonResponse implements ResponseInterface {
         $jsonBody=self::getSuccessBody();
         $jsonBody['msg']=$msg;
         $jsonBody['data']=$data;
-        echo json_encode( $jsonBody);
+        return json_encode( $jsonBody);
     }
 
     public static function error(string $msg='success', $data=[]){
         $jsonBody=self::getErrorBody();
         $jsonBody['msg']=$msg;
         $jsonBody['data']=$data;
-        echo  json_encode( $jsonBody);
+        return  json_encode( $jsonBody);
     }
 }

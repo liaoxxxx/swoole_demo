@@ -2,13 +2,15 @@
 
 namespace app;
 
-use app\util\router\Router;
+use app\util\databases\DbConnector;
+use app\util\router\RouteManager;
 use app\util\request\RequestInterface;
 
 class App{
 
     public function __construct(array $container){
 
+        $this->setDbConnector($container['DbConnectorPool']);
         //路由
         //缓存
         //数据库
@@ -25,7 +27,7 @@ class App{
     public function bind(RequestInterface $request,$response){
         self::setRequest($request);
         self::setResponse($response);
-        self::setRouter(new Router(self::getRequest()));
+        self::setRouter(new RouteManager(self::getRequest()));
         self::getRouter();
 
     }
@@ -38,7 +40,8 @@ class App{
 
     private $cacheDriver;           //缓存数据库驱动
 
-    private $dbDriver;              //关系数据库驱动
+    private $DbConnector;
+
 
     private $jsonResponce;          //json响应
 
@@ -115,18 +118,18 @@ class App{
     /**
      * @return mixed
      */
-    public function getDbDriver()
+    public function getDbConnector():DbConnector
     {
-        return $this->dbDriver;
+        return $this->DbConnector;
     }
 
     /**
-     * @param mixed $dbDriver
+     * @param mixed $DbConnectorPool
      */
-    public function setDbDriver($dbDriver): void
+    public function setDbConnector($DbConnector): void
     {
-        $this->dbDriver = $dbDriver;
-    }
+        $this->DbConnectorPool = $DbConnector;
+    }              //关系数据库驱动
 
     /**
      * @return mixed
@@ -195,7 +198,7 @@ class App{
     //销毁  app实例
     public function  __destruct(){
         // todo  回收数据库 ，缓存 到连接池
-        unset($this);
+        //unset($this);
 
     }
 }

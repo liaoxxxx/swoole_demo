@@ -18,12 +18,12 @@ class HttpServer
         }
         //初始化配置
 
-        $GLOBALSConfig=new AutoConfig($rootPath);
+
         //启动组件
-        $booter= new Boot($GLOBALSConfig);
+        $booter= new Boot($rootPath);
         // 创建根  app 实例
         /***********    **********/
-        $RootApp= new App($booter->getContainer());
+        $RootApp= new App($booter->getUtilContainer());
 
         //监听 用户请求
         $http->on('request', function ($request, $response) use ($RootApp) {
@@ -40,10 +40,10 @@ class HttpServer
 
             // todo 后置中间件
 
+
             //销毁 APP副本实例
-
             $AppCloneInstance->__destruct();
-
+            unset($AppCloneInstance);
             //$app=  new \app\App($request,$response);
             //var_dump($app);
             /*list($controller, $action) = explode('/', trim($request->server['request_uri'], '/'));
@@ -57,10 +57,10 @@ class HttpServer
             /**
              * @var PDO
              */
-            /* $dbConnector= DbConnector::getConnector();
-             $statement = $dbConnector->prepare("show databases");
-             $statement->execute();
-             $result = $statement->fetchAll();*/
+           /* $dbConnector= DbConnector::getConnector();
+            $statement = $dbConnector->prepare("show databases");
+            $statement->execute();
+            $result = $statement->fetchAll();*/
             //根据 $controller, $action 映射到不同的控制器类和方法
 
         });
@@ -68,7 +68,9 @@ class HttpServer
 
     }
 }
-dirname(__FILE__);
+
+
+
 
 echo date('Y-m-d H:i:s')." :  \033[1;35;5;9m start run  \e[0m\n";
 new HttpServer(dirname(__FILE__));

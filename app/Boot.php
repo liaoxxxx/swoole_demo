@@ -3,22 +3,27 @@
 namespace app;
 
 
+use app\util\databases\DbConnector;
+
 class Boot{
 
-    private  array $container;
+    private  array $utilContainer =[
+        'DbConnectorPool' =>null,
+    ];
 
 
-    public function __construct($config)
+    public function __construct(String $rootPath)
     {
-
+        $GLOBALSConfig=new AutoConfig($rootPath);
+        //
+        $dbConnector=new DbConnector($GLOBALSConfig->getConfigs()['dbConfig']);
+        $this-> putUtilToContainerByKey('DbConnector' ,$dbConnector);
     }
 
-
-    private function booting(){
-
+    public function getUtilContainer(){
+        return $this->utilContainer;
     }
-
-    public function getContainer(){
-        return $this->container;
+    private function putUtilToContainerByKey(string $key,$util){
+        $this->utilContainer[$key]=$util;
     }
 }

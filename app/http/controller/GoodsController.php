@@ -1,7 +1,8 @@
 <?php
-use app\util\view\View;
 
 namespace app\http\controller;
+use app\util\view\View;
+use app\util\response\JsonResponse;
 
 class GoodsController {
 
@@ -12,8 +13,12 @@ class GoodsController {
 
 
     public function add($request, $response){
-       $view= View::display("",[]);
+        return View::display("",[]);
     }
+
+     public function edit($request, $response){
+            return JsonResponse::success('编辑成功',['id'=>001,"name"=>'goods name is empty']);
+     }
 
 }
 

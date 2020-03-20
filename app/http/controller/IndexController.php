@@ -1,8 +1,9 @@
 <?php
 
-
 namespace app\http\controller;
+use app\util\response\JsonResponse;
 use app\util\view\View;
+
 class IndexController {
 
 
@@ -11,7 +12,10 @@ class IndexController {
     }
 
     public function index($request, $response){
-        $view= View::display("",[]);
+
+        $foo='bar';
+        $view= View::display("",['foo'=>$foo]);
+         $response->end($view);
     }
 
     public function add($request, $response){
