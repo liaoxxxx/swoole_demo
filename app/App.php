@@ -11,6 +11,7 @@ class App{
     public function __construct(array $container){
 
         $this->setDbConnector($container['DbConnectorPool']);
+        $this->setRouteManager($container['RouteManager']);
         //路由
         //缓存
         //数据库
@@ -20,23 +21,11 @@ class App{
         //文件日志
     }
 
-
-
-
-
-    public function bind(RequestInterface $request,$response){
-        self::setRequest($request);
-        self::setResponse($response);
-        self::setRouter(new RouteManager(self::getRequest()));
-        self::getRouter();
-
-    }
-
-    private static $request;        //请求容器
+    private static RequestInterface $request;        //请求容器
 
     private static $response;       //响应容器
 
-    private static $router;         //路由
+    private static RouteManager $routeManager;         //路由
 
     private $cacheDriver;           //缓存数据库驱动
 
@@ -52,9 +41,19 @@ class App{
     private $fileLoger;             //文件日志
 
     /**
+     * @param RequestInterface $request
+     * @param $response
+     */
+    public function bind(RequestInterface $request,$response){
+        self::setRequest($request);
+        self::setResponse($response);
+    }
+
+
+    /**
      * @return mixed
      */
-    public static function getRequest()
+    public  function getRequest():RequestInterface
     {
         return self::$request;
     }
@@ -62,7 +61,7 @@ class App{
     /**
      * @param mixed $request
      */
-    public static function setRequest($request): void
+    private static function setRequest($request): void
     {
         self::$request = $request;
     }
@@ -78,25 +77,25 @@ class App{
     /**
      * @param mixed $response
      */
-    public static function setResponse($response): void
+    private static function setResponse($response): void
     {
         self::$response = $response;
     }
 
     /**
-     * @return mixed
+     * @return RouteManager
      */
-    public static function getRouter()
+    public  function getRouteManager():RouteManager
     {
-        return self::$router;
+        return self::$routeManager;
     }
 
     /**
-     * @param mixed $router
+     * @param $routeManager
      */
-    public static function setRouter($router): void
+    private static function setRouteManager($routeManager): void
     {
-        self::$router = $router;
+        self::$routeManager = $routeManager;
     }
 
     /**
@@ -110,7 +109,7 @@ class App{
     /**
      * @param mixed $cacheDriver
      */
-    public function setCacheDriver($cacheDriver): void
+    private function setCacheDriver($cacheDriver): void
     {
         $this->cacheDriver = $cacheDriver;
     }
@@ -126,7 +125,7 @@ class App{
     /**
      * @param mixed $DbConnectorPool
      */
-    public function setDbConnector($DbConnector): void
+    private function setDbConnector($DbConnector): void
     {
         $this->DbConnectorPool = $DbConnector;
     }              //关系数据库驱动
@@ -142,7 +141,7 @@ class App{
     /**
      * @param mixed $jsonResponce
      */
-    public function setJsonResponce($jsonResponce): void
+    private function setJsonResponce($jsonResponce): void
     {
         $this->jsonResponce = $jsonResponce;
     }
@@ -158,7 +157,7 @@ class App{
     /**
      * @param mixed $view
      */
-    public function setView($view): void
+    private function setView($view): void
     {
         $this->view = $view;
     }
@@ -174,7 +173,7 @@ class App{
     /**
      * @param mixed $consoleLoger
      */
-    public function setConsoleLoger($consoleLoger): void
+    private function setConsoleLoger($consoleLoger): void
     {
         $this->consoleLoger = $consoleLoger;
     }
@@ -190,7 +189,7 @@ class App{
     /**
      * @param mixed $fileLoger
      */
-    public function setFileLoger($fileLoger): void
+    private function setFileLoger($fileLoger): void
     {
         $this->fileLoger = $fileLoger;
     }

@@ -19,15 +19,44 @@ class Request implements RequestInterface {
         return $this-> requester->header;
     }
 
-    public function getHost():string {
-        return  $this->requester->header['host'];
-    }
 
 
+
+    //query_string	        请求的 GET 参数，如：id=1&cid=2 如果没有 GET 参数，该项不存在
+    //request_method	    请求方法，GET/POST 等
+    //request_uri	        无 GET 参数的访问地址，如 /favicon.ico
+    //path_info	同          request_uri
+    //request_time	        request_time 是在 Worker 设置的，在 SWOOLE_PROCESS 模式下存在 dispatch 过程，因此可能会与实际收包时间存在偏差。尤其是当请求量超过服务器处理能力时，request_time 可能远滞后于实际收包时间。可以通过 $server->getClientInfo 方法获取 last_time 获得准确的收包时间。
+    //request_time_float	请求开始的时间戳，以微秒为单位，float 类型，如 1576220199.2725
+    //server_protocol	    服务器协议版本号，Http 是：HTTP/1.0 或 HTTP/1.1，Http2 是：HTTP/2
+    //server_port	        服务器监听的端口
+    //remote_port	        客户端的端口
+    //remote_addr	        客户端的 IP 地址
+    //master_time	        连接上次通讯时间
     public function getServer(){
         return $this->requester->server;
     }
 
+    /**
+     * @return string uri
+     */
+    public function getRequestUrI():string {
+        return $this->requester->server['request_uri'];
+    }
+
+    /**
+     * @return string host
+     */
+    public function getHost():string {
+        return  $this->requester->header['host'];
+    }
+
+    /**
+     * @return string request_method
+     */
+    public function getMethod():string {
+        return  $this->requester->server['request_method'];
+    }
 
     //Http 请求的 GET 参数，相当于 PHP 中的 $_GET，格式为数组。
     //      Swoole\Http\Request->get: array;
